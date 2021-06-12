@@ -1,0 +1,151 @@
+//========= COMMON CLASS =======================================================
+.title {
+	text-align: center;
+
+	// .title__title
+	&__title {
+		font-family: "Ceremonious One";
+		font-size: 40px;
+		color: #bb9c66;
+		margin-bottom: 20px/40px * 1em;
+	}
+
+	// .title__subtitle
+	&__subtitle {
+		font-family: "PFD";
+		font-size: 35px;
+		line-height: 35px;
+		text-transform: uppercase;
+		letter-spacing: 5.25px;
+		font-weight: 500;
+
+		&.white {
+			color: #ffffff;
+			font-weight: 400;
+		}
+	}
+}
+
+._ibg {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	// position: absolute;
+	// top: 0;
+	// left: 0;
+}
+
+//==================== ОТСТУПЫ У БЛОКОВ ==============================================
+.block-header {
+
+	// .block-header__title
+	&__title {
+		margin-bottom: 20px;
+	}
+}
+
+//=================== BUTTONs ========================================================
+.btn {
+	position: relative;
+	padding: 20px 53px;
+	display: inline-flex;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: #ffffff;
+	border: 3px solid;
+	border-image-source: linear-gradient(to top, #946d36, #c4a977);
+	border-image-slice: 1;
+
+	&_big {
+		font-size: 20px;
+		color: #000;
+		font-weight: 500;
+		font-family: "PFD";
+		line-height: 25px;
+		letter-spacing: 0px;
+		padding: 20px 0px;
+		display: block;
+	}
+
+	&:hover {
+		
+		color: #946d36;
+		border: 3px solid;
+		box-shadow: 0 0 20px #bb9c66;
+		border-image-source: linear-gradient(to top, #c4a977, #946d36);
+		border-image-slice: 1;
+		background: linear-gradient(white, #ce8013); // Градиент для текста //
+		-webkit-background-clip: text; // Обрезаем фон по тексту 
+		-webkit-text-fill-color: transparent; // Прозрачный текст 
+	}
+}
+
+//====================================================================================
+
+//====================================================================================
+.ibg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+
+	img {
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+//====================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+//=====================================================================================
+
+//BURGER
+// .icon-menu{
+// 	display: block;
+// 	position: absolute;
+// 	top: 18px;
+// 	right: 10px;
+// 	width: 30px;
+// 	height: 18px;
+// 	cursor: pointer;
+// 	z-index: 5;
+
+// 	span{
+// 		@include anim(0.3s,0s);
+// 		top: calc(50% - 1px);
+// 		left: 0px;
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 2px;
+// 		background-color: #000;
+// 		&:first-child {top: 0px;}
+// 		&:last-child {top: auto;bottom: 0px;}
+// 		&.active{
+// 			@include scale(0);
+// 			&:first-child{
+// 				@include rotate(-45deg);
+// 				top: calc(50 - 1px);
+// 			}
+// 			&:last-child{
+// 				@include rotate(45deg);
+// 				top: calc(50 - 1px);
+// 			}
+// 		}
+// 	}
+// }

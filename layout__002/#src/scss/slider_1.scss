@@ -1,0 +1,77 @@
+//------------ VISIBLE SLIDE ------------------
+
+.swipper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    // .swipper__container
+    &__container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    // .swipper__item
+    &__item {
+        display: none;
+        position: relative;
+        margin: 0 auto;
+        animation: 0.7s ease-in-out;
+    }
+}
+
+._active,
+.next {
+    display: block;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+//------------ KEYFRAMES ---------------------
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+
+//------------ ANIMATION ----------------------------
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}

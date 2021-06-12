@@ -1,0 +1,138 @@
+.footer {
+    background-color: #1c242a;
+    padding: 45px 0px;
+
+    // .footer__content
+    &__content {}
+
+    // .footer__body
+    &__body {
+        display: flex;
+
+        @media (max-width:767px) {
+            display: block;
+            text-align: center;
+        }
+
+    }
+
+    // .footer__column
+    &__column {
+        &:first-child {
+            flex: 0 0 180px;
+        }
+
+        &_full {
+            flex: 1 1 auto;
+        }
+    }
+
+    // .footer__logo
+    &__logo {
+        display: inline-block;
+        margin-bottom: 25px;
+
+        @media (max-width:767px) {
+            margin-bottom: 0px;
+        }
+
+    }
+
+    // .footer__info
+    &__info {
+        color: #bb9c66;
+
+        @media (max-width:767px) {
+            margin-top: 25px;
+        }
+    }
+
+    // .footer__menu
+    &__menu {
+        padding: 0px 30px;
+
+        @media (max-width:767px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .footer__list
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        li {
+            margin: 15px 15px 0px 0px;
+        }
+
+        @media (max-width:767px) {
+            justify-content: center;
+            margin: 15px 7px 0px 7px;
+        }
+    }
+
+    // .footer__link
+    &__link {
+        font-family: "PFD";
+        font-size: 14px;
+        font-weight: 500;
+        color: #ffff;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+
+        @media (min-width:992px) {
+            &:hover {
+                color: #bb9c66;
+            }
+        }
+
+    }
+
+    // .footer__contacs
+    &__contacts {
+        padding-top: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @media (max-width:767px) {
+            align-items: center;
+        }
+
+    }
+
+    // .footer__phone
+    &__phone {
+        display: flex;
+        align-items: flex-start;
+        font-family: "BravoRGRegular";
+        color: #bb9c66;
+        font-size: 50px;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        small {
+            margin: 2px 5px 0px 0px;
+            font-size: 25px;
+        }
+
+        @media (max-width:991px) {
+            font-size: 40px;
+
+            small {
+                font-size: 20px;
+            }
+        }
+    }
+
+    // .footer__callback
+    &__callback {
+        color: #bb9c66;
+        background: url("../img/icons/callback.svg") left no-repeat;
+        padding-left: 15px;
+
+        span {
+            border-bottom: 1px dashed;
+        }
+    }
+}
